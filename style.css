@@ -44,3 +44,46 @@ header, footer {
 
 /* WRITE YOUR CODE BELOW HERE */
 
+/* General text styling */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  line-height: 75%;
+  letter-spacing: .1rem;
+  word-spacing: .1rem;
+}
+
+h1 h2 {
+letter-spacing: .2rem;
+}
+
+section > p {
+  text-indent: 1.25rem;
+}
+
+/* Links */
+
+/* Lists */
+
+/* Nav Menu */
+
+nav li {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: solid;
+  padding: 20px;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+ }
+
+ h1 {
+  text-align: center;
+ }
