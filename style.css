@@ -42,23 +42,37 @@ header, footer {
   border-bottom: 5px solid #a66;
 }
 
+
+
 /* WRITE YOUR CODE BELOW HERE */
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 /* General text styling */
 
 html {
   font-size: 10px;
+  font-family: "Nunito", sans-serif;
+}
+
+h1, h2 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-family: "Merriweather", serif; 
 }
 
 body {
-  line-height: 75%;
+  line-height: 1.5;
   letter-spacing: .1rem;
   word-spacing: .1rem;
 }
 
-h1 h2 {
-letter-spacing: .2rem;
-}
+h1 {
+  text-align: center;
+ }
 
 section > p {
   text-indent: 1.25rem;
@@ -66,11 +80,52 @@ section > p {
 
 /* Links */
 
+a:visited {
+  color: #865454;
+}
+
+a:focus, a:hover{
+  text-decoration: none;
+  color:  #b35e5e;
+}
+
+a:focus {
+  outline: none; 
+}
+
+a:active{
+  color: #cd5c5c; 
+  font-weight: bold;
+}
+
+a[href^="https://"]::after { /* Selects an <a> element whose href attribute value begins with http: */
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('external-link-52.png');
+  background-size: contain;
+  margin-left: 2px;
+}
+
 /* Lists */
+
+li {
+  line-height: 1.5em;
+  list-style-type: square;
+}
 
 /* Nav Menu */
 
-nav li {
+nav {
+  padding-left: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a{
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -84,6 +139,5 @@ nav a {
   text-decoration: none;
  }
 
- h1 {
-  text-align: center;
- }
+
+
