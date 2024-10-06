@@ -80,8 +80,8 @@ section > p {
 
 /* Links */
 
-a:link {
-  color: #a66;
+a {
+  color: #a66
 }
 
 a:visited {
