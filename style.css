@@ -42,103 +42,84 @@ header, footer {
   border-bottom: 5px solid #a66;
 }
 
-
-
 /* WRITE YOUR CODE BELOW HERE */
 
-/* Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
-/* General text styling */
-
-html {
-  font-size: 10px;
-  font-family: "Nunito", sans-serif;
-}
-
-h1, h2 {
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  font-family: "Merriweather", serif; 
-}
-
-body {
-  line-height: 1.5;
-  letter-spacing: .1rem;
-  word-spacing: .1rem;
-}
-
-h1 {
-  text-align: center;
- }
-
-section > p {
-  text-indent: 1.25rem;
-}
-
 /* Links */
+h1, h2, h3 {
+  
+  font-family: "Merriweather", serif; 
+  color: black; 
+  margin-bottom: 10px; /* Space below headings */
+}
 
-a {
-  color: #a66
+/* Square bullet points */
+ul{
+  list-style-type: square; 
+}
+
+h1{
+  text-align: center; /* Centering the main heading */;
+}
+
+p {
+  font-family: 'Georgia', serif; /* Using a serif font for paragraphs */
+  line-height: 1.6; /* Enhancing readability */
+  margin-bottom: 10px; /* Space below paragraphs */
+}
+
+/* Link styles */
+a{
+  color: #845252; /* color for links */
 }
 
 a:visited {
-  color: #865454;
-}
-
-a:focus, a:hover{
-  text-decoration: none;
-  color:  #b35e5e;
+  color: #a66; /* color for visited links */
 }
 
 a:focus {
-  outline: none; 
+  outline: none; /* Focus outline */
 }
 
-a:active{
-  color: #cd5c5c; 
-  font-weight: bold;
+a:hover {
+  text-decoration: none; /* remove underline on hover */
 }
 
-a[href^="https://"]::after { /* Selects an <a> element whose href attribute value begins with http: */
-  content: '';
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  background-image: url('external-link-52.png');
-  background-size: contain;
-  margin-left: 2px;
+/* Selects an <a> element whose href attribute value begins with http: */
+a[href^="https://"]::after { 
+  content: ''; 
+  display: inline-block; /* Display as inline block */
+  width: 1rem;  /* Width of the icon */
+  height: 1rem; /* Height of the icon */
+  background-image: url('external-link-52.png'); /* External link icon */
+  background-size: contain;  /* Contain the image */
+  margin-left: 2px;   /* Margin to the left */
 }
 
-/* Lists */
-
-li {
-  line-height: 1.5em;
-  list-style-type: square;
-}
-
-/* Nav Menu */
-
-nav {
-  padding-left: 0;
-}
-
-nav ul li {
-  list-style-type: none;
-}
-
-nav ul li a{
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  border: solid;
-  padding: 20px;
-  flex-direction: column;
-  margin-top: 1rem;
-}
-
+/* Rectangular box around navigation items */
 nav a {
-  text-decoration: none;
- }
+  display: flex; /* Flexbox for easy alignment */
+  justify-content: center; /* Centering items horizontally */
+  align-items: center; /* Centering items vertically */
+  width: 200px; /* Fixed width for all items */
+  height: 65px; /* Fixed height for all items */
+  margin: 0.5rem 0; /* Margin between items */
+  font-size: 1.2rem; /* Font size */
+  border: 1px solid rgb(197, 118, 118); /* Border color */
+  background-color: white; /* Light background color */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Remove bullet points from list items */
+nav ul {
+  list-style-type: none; /* Remove default bullet points */
+}
+
+/* Ordered list with lowercase letters (a, b, c) */
+ol{
+  list-style-type: lower-alpha; /* Changes the list numbering to lowercase letters */
+}
+
+nav a:hover {
+  background-color: #f0f0f0; /* background on hover */
+}
